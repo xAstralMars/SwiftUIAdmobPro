@@ -28,7 +28,7 @@
 
 ## Usage
 
-### 1. Add App Identifier and SKAdNetworkIdentifier ro Info.plist
+### 1. Add App Identifier and SKAdNetworkIdentifier in Info.plist
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
