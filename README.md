@@ -326,7 +326,7 @@ struct MyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .interstitialAd(config: InterstitialAdConfig(adUnitID: "ca-app-pub-3940256099942544/4411468910"))
+                  .interstitialAd(adUnitID: "ca-app-pub-3940256099942544/4411468910")
         }
     }
 }
