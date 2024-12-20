@@ -9,21 +9,13 @@
 import SwiftUI
 import GoogleMobileAds
 
-// MARK: - Interstitial Ad Config
-public struct InterstitialAdConfig {
-    public let adUnitID: String
-
-    public init(adUnitID: String) {
-        self.adUnitID = adUnitID
-    }
-}
 
 // MARK: - Interstitial Ad Manager
 @MainActor
 public class InterstitialAdManager: NSObject, GADFullScreenContentDelegate, ObservableObject {
     private var interstitial: GADInterstitialAd?
     private let adUnitID: String
-    
+
     @Published public var isAdReady = false
     @Published public var isLoading = false
     
@@ -115,8 +107,8 @@ public extension EnvironmentValues {
 public struct InterstitialAdViewModifier: ViewModifier {
     @StateObject private var adController: InterstitialAdManager
     
-    public init(config: InterstitialAdConfig) {
-        _adController = StateObject(wrappedValue: InterstitialAdManager(adUnitID: config.adUnitID))
+    public init(adUnitID: String) {
+        _adController = StateObject(wrappedValue: InterstitialAdManager(adUnitID: adUnitID))
     }
     
     public func body(content: Content) -> some View {
@@ -126,8 +118,8 @@ public struct InterstitialAdViewModifier: ViewModifier {
 }
 
 public extension View {
-    func interstitialAd(config: InterstitialAdConfig) -> some View {
-        modifier(InterstitialAdViewModifier(config: config))
+    func interstitialAd(adUnitID: String) -> some View {
+        modifier(InterstitialAdViewModifier(adUnitID: adUnitID))
     }
 }
 
