@@ -28,7 +28,7 @@
 
 ## Usage
 
-### 1. Add App Identifier and SKAdNetworkIdentifier ro Info.plist
+### 1. Add App Identifier and SKAdNetworkIdentifier in Info.plist
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -302,6 +302,8 @@ struct ContentView: View {
 - `.onAdClicked` Triggered when the ad is clicked.
 - `.onAdClosed` Triggered when the ad is closed by the user
 
+> **Note:** All event modifiers are optional.
+
 
 ### 4. Show Interstitial Ads
 
@@ -381,6 +383,7 @@ struct ContentView: View {
 - `onInterstitialAdPresented` Triggered when the interstitial ad is displayed.
 - `onInterstitialAdFailedToPresent` Handles errors when presenting the interstitial ad.
 - `onInterstitialAdDismissed` Triggered when the interstitial ad is dismissed.
+> **Note:** All event modifiers are optional.
 
 
 
