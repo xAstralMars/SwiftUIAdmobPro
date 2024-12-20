@@ -4,17 +4,6 @@
 
 ---
 
-## Table of Contents
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Add App Identifier and SKAdNetworkIdentifiers](#add-app-identifier-and-skadnetworkidentifiers)
-  - [Initialize AdMob](#initialize-admob)
-  - [Display a Banner Ad](#display-a-banner-ad)
-  - [Show Interstitial Ads](#show-interstitial-ads)
-- [Event Modifiers](#event-modifiers)
-
-
 
 ## Features
 
