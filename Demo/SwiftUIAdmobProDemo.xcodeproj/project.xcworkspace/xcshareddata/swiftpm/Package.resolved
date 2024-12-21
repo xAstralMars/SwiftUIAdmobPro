@@ -1,5 +1,5 @@
 {
-  "originHash" : "6889336244ea39d41b5a9a9d14a36334e8b65fc9daf1febe5af8570dd5cc3466",
+  "originHash" : "262008e4c9784769d444408bed8f74fade4f491bd0b4e1df61c629b0bf35c744",
   "pins" : [
     {
       "identity" : "swift-package-manager-google-mobile-ads",
@@ -17,15 +17,6 @@
       "state" : {
         "revision" : "708a282840c2171ee63bd93b87afa49fe507d70e",
         "version" : "2.7.0"
-      }
-    },
-    {
-      "identity" : "swiftuiadmobpro",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/X901/SwiftUIAdmobPro.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "b72b71dbc2b3ed2eabcb00d8aaba66559e73e09c"
       }
     }
   ],

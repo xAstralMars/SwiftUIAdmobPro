@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD9C08A22D15C90800D3C78B /* SwiftUIAdmobPro in Frameworks */ = {isa = PBXBuildFile; productRef = FD9C08A12D15C90800D3C78B /* SwiftUIAdmobPro */; };
+		FDBFAF962D16CE8A0078F948 /* SwiftUIAdmobPro in Frameworks */ = {isa = PBXBuildFile; productRef = FDBFAF952D16CE8A0078F948 /* SwiftUIAdmobPro */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD9C08A22D15C90800D3C78B /* SwiftUIAdmobPro in Frameworks */,
+				FDBFAF962D16CE8A0078F948 /* SwiftUIAdmobPro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 			);
 			name = SwiftUIAdmobProDemo;
 			packageProductDependencies = (
-				FD9C08A12D15C90800D3C78B /* SwiftUIAdmobPro */,
+				FDBFAF952D16CE8A0078F948 /* SwiftUIAdmobPro */,
 			);
 			productName = SwiftUIAdMobPro;
 			productReference = FD99270F2D1084E20002F850 /* SwiftUIAdmobProDemo.app */;
@@ -114,7 +114,7 @@
 			mainGroup = FD9927062D1084E20002F850;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				FD9C08A02D15C90800D3C78B /* XCRemoteSwiftPackageReference "SwiftUIAdmobPro" */,
+				FDBFAF942D16CE8A0078F948 /* XCLocalSwiftPackageReference "../../SwiftUIAdmobPro" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FD9927102D1084E20002F850 /* Products */;
@@ -349,21 +349,16 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		FD9C08A02D15C90800D3C78B /* XCRemoteSwiftPackageReference "SwiftUIAdmobPro" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/X901/SwiftUIAdmobPro.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		FDBFAF942D16CE8A0078F948 /* XCLocalSwiftPackageReference "../../SwiftUIAdmobPro" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../SwiftUIAdmobPro;
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FD9C08A12D15C90800D3C78B /* SwiftUIAdmobPro */ = {
+		FDBFAF952D16CE8A0078F948 /* SwiftUIAdmobPro */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FD9C08A02D15C90800D3C78B /* XCRemoteSwiftPackageReference "SwiftUIAdmobPro" */;
 			productName = SwiftUIAdmobPro;
 		};
 /* End XCSwiftPackageProductDependency section */
