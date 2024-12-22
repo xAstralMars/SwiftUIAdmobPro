@@ -30,6 +30,7 @@ struct ContentView: View {
             .onAdClosed {
                 print("Ad closed")
             }
+            .frame(height: 50)
 
             
             VStack(spacing: 20) {

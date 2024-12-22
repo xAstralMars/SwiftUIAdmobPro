@@ -74,16 +74,18 @@ public struct BannerView: UIViewControllerRepresentable {
     }
 
     public func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        guard viewWidth != .zero else { return }
-
-        // Use configured ad size or adaptive size
-        let adSize = adSize ?? GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
-        bannerView.adSize = adSize
-        bannerView.load(GADRequest())
-
-        if uiViewController.preferredContentSize != adSize.size {
-            uiViewController.preferredContentSize = adSize.size
+        if viewWidth != .zero {
+            let adSize = adSize ?? GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth)
+            bannerView.adSize = adSize
+            if uiViewController.preferredContentSize != adSize.size {
+                uiViewController.preferredContentSize = adSize.size
+            }
+            
+        } else {
+            bannerView.adSize = GADAdSizeBanner
         }
+        
+        bannerView.load(GADRequest())
     }
 
     public func makeCoordinator() -> Coordinator {
