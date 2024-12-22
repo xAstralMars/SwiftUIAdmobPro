@@ -33,7 +33,7 @@
 To ensure proper ad attribution and privacy compliance, you need to configure your **App Identifier** and **SKAdNetworkIdentifier** in the `Info.plist` file.  
 
 Follow the detailed steps provided in Google's official guide:  
-[AdMob iOS Privacy Strategies](https://developers.google.com/admob/ios/privacy/strategies)  
+[AdMob iOS Privacy Strategies](https://developers.google.com/ad-manager/mobile-ads-sdk/ios/quick-start#update_your_infoplist)  
 
 > **Important:**  Adding **SKAdNetworkIdentifiers** is **required** for accurate ad attribution and reporting on iOS devices.  
 
