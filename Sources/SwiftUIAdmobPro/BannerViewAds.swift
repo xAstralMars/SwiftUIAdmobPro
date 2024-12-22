@@ -55,7 +55,11 @@ public struct BannerView: UIViewControllerRepresentable {
         let bannerViewController = BannerViewController()
 
         // Configure banner view
+        #if DEBUG
+        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        #else
         bannerView.adUnitID = adUnitID
+        #endif
         bannerView.backgroundColor = backgroundColor
         bannerView.rootViewController = bannerViewController
         bannerView.delegate = context.coordinator
